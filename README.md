@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# SysMon Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SysMon Dashboard is a web-based application built with React for monitoring system logs and metrics in real time. It provides a terminal-like interface for viewing live logs, filtering logs based on time ranges, and visualizing system metrics using charts. The application supports infinite scrolling, log pagination, and custom time-range selection.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Logs
+1. **Terminal-Like View:** Renders logs in a terminal-like interface.
+2. **Time Range Quick Selection:** Provides options for selecting logs from the last `{n}` minutes/hours and supports custom time range selection.
+3. **Live Logs Subscription:** Automatically fetches and displays new logs as they arrive.
+4. **Autoscroll and Pagination:** Autoscrolls when new logs arrive, supports infinite scrolling, and paginates when scrolling up.
+5. **Log Count Below Fold:** Displays the count of new logs below the fold and scrolls to the latest logs when clicked.
+6. **Shareable URL:** All states of logs (filters) are reflected in the URL for sharing purposes.
 
-### `npm start`
+### Metrics
+1. **Interactive Charts:** Displays four charts (line and area charts) to visualize system metrics using Chart.js.
+2. **Time Range Filtering:** Allows filtering of metrics by time range similar to logs.
+3. **Draggable Selection:** Allows selecting and dragging over chart sections to check logs for the corresponding time range.
+4. **Shareable URL:** All states of metrics (filters) are reflected in the URL for sharing purposes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Libraries Used
+- **React**: ^17.x
+- **React Router DOM**: ^6.x
+- **React-Chartjs-2**: ^4.x
+- **TailwindCSS**: ^3.x
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js (v14 or above)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/yourusername/Frontend-Assignment.git
+   cd Frontend-Assignment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Additional Notes
+If any icons/assets are missing, export them from the provided Figma file.
+For APIs, use the provided data generators to mimic real API calls for logs and metrics.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
